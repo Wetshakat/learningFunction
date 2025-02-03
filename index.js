@@ -28,6 +28,7 @@ name = "Racy";
 
 greet();
 console.log("Hello ,"+ name); 
+<<<<<<< HEAD
 
 let Group = [
   {
@@ -71,3 +72,5 @@ function concatName(group) {
 }
 let result = concatName(Group);
 console.log(result);
+=======
+>>>>>>> d62be253240414f61ad5fc9b6e24f342b045ab39
