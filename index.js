@@ -28,3 +28,46 @@ name = "Racy";
 
 greet();
 console.log("Hello ,"+ name); 
+
+let Group = [
+  {
+    name : "john",
+    Age : 25,
+    nationality : "Nigerian",
+    
+  },
+
+{
+    name : "Paul",
+    Age : 30,
+    nationality : "Nigerian",
+    
+},
+{
+  name : "john",
+  Age : 35,
+  nationality : "Nigerian",
+}
+]
+
+// let totalAge= Group.reduce((sum,person)=>sum + person.Age ,0,);
+// console.log(totalAge)
+
+let totalAge = Group.reduce ((sum,person)=> sum +person.Age,0,);
+console.log(totalAge)
+
+let allNames = Group.reduce((sum,person)=> sum+person.name,"");
+console.log(allNames)
+
+function concatName(group) {
+  if(group.length < 2){
+    return "You are Funny lol"
+  }
+  
+  let personOneName = group[1].name;
+  let personTwoAge = group[2].Age
+
+  return personOneName + personTwoAge;
+}
+let result = concatName(Group);
+console.log(result);
